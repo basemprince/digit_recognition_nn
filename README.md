@@ -1,14 +1,14 @@
-# digit_recognition_nn
+# mnist dataset simple neural network 
 
 a neural network created without using any frameworks. The network is tailored to work with the mnist data set, if you want to use it, you can download the set from here:  [link](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)
 
 
-The network simply consists of 3 layers, input, hidden and output
-zero layer: consists of 784 inputs [a 28x28 pixel image]
-first layer: hidden layer and consists of 10 nodes
-second layer: the output and consists of 10, one for the digits 0-9
+The network simply consists of 3 layers, input, hidden and output:
+* zero layer: consists of 784 inputs [a 28x28 pixel image]
+* first layer: hidden layer and consists of 10 nodes
+* second layer: the output and consists of 10, one for the digits 0-9
 
-The trainig steps:
+The training steps:
 * The network starts with a random guess for the weights and biases
 * make a prediction through forward propagation using the weights and biases [Z = W.A + b]:
   * calculate first layer and apply a rectified linear unit (Relu) activation <- no longer linear
